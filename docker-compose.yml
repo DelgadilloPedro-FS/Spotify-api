@@ -11,8 +11,8 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_USER: asl
-      MYSQL_PASSWORD: asl
+      MYSQL_USER: pp3
+      MYSQL_PASSWORD: pp3
       MYSQL_DATABASE: pp3
   pp3-node:
     image: node:latest
