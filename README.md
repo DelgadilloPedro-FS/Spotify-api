@@ -9,14 +9,14 @@
 - Safari
 
 # Getting Started
-    This is a guide to getting a  dev enviroment setup
+This is a guide to getting a  dev enviroment setup
 
 ## Backend
-    The backend of the project runs on port 3001 and is in a docker container so you just need to run
-- `$ docker compose up`
+The backend of the project runs on port 3001 and is in a docker container so you just need to run
+    `$ docker compose up`
 
 - ## Frontend 
     The frontend of the project runs on localhost:3000 and can be started by 
-- `$ cd pp3-ui-react`
-- `$ npm i || npm install`
-- `$ npm run dev`
+    `$ cd pp3-ui-react`
+    `$ npm i || npm install`
+    `$ npm run dev`
