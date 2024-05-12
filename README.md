@@ -11,8 +11,11 @@ This is the repository for my porject portfolio 3 "spotify api" the name is pend
 
 ## Getting Started
 
-This is a guide to getting dev enviroment setup
+This is a guide to getting dev enviroment setup run the following in the root directory of the project to set up the .env
 
+   `$ cp .env.dist .env && vim .env`
+
+afterwards fil the .env with your info and remember to add .env to to your .gitgnore
 ## Backend
 The backend of the project runs on port 3001 and is in a docker container so you just need to run
     `$ docker compose up`
