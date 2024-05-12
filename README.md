@@ -1,5 +1,4 @@
 # Project Overview
-<hr>
 
 This is the repository for my porject portfolio 3 "spotify api" the name is pending. The backend is an express service connected to a mysql db and mapped using sequlizer. The frontend so far uses react and is built by vite.
 
@@ -11,7 +10,6 @@ This is the repository for my porject portfolio 3 "spotify api" the name is pend
 - Safari
 
 ## Getting Started
-<hr>
 
 This is a guide to getting a  dev enviroment setup
 
