@@ -11,7 +11,7 @@ This is the repository for my porject portfolio 3 "spotify api" the name is pend
 
 ## Getting Started
 
-This is a guide to getting a  dev enviroment setup
+This is a guide to getting dev enviroment setup
 
 ## Backend
 The backend of the project runs on port 3001 and is in a docker container so you just need to run
