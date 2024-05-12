@@ -10,7 +10,7 @@ This is the repository for my porject portfolio 3 "spotify api" the name is pend
 - MySQL
 - Safari
 
-# Getting Started
+## Getting Started
 <hr>
 
 This is a guide to getting a  dev enviroment setup
