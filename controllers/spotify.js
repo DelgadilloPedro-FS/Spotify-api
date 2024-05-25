@@ -70,9 +70,9 @@ const jwt = async (req, res, next) => {
 
 const auth = async (req, res) => {
   if (req.token) {
-    res.redirect("http://localhost:3000");
+    res.redirect("http://localhost:3000/search");
   } else {
-    res.redirect("http://localhost:3000/login");
+    res.redirect("http://localhost:3000/");
   }
 };
 
