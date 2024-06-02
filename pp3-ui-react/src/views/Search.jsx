@@ -1,16 +1,24 @@
-import React, { useState, useEffect } from "react";
+// Search.js (updated)
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import SearchBar from "../components/SearchBar"
+
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState("")
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (newSearchTerm) => {
+    setSearchTerm(newSearchTerm);
+    // Implement search logic here (e.g., API call, filtering data)
+    // Potentially navigate to results page with search term:
+    // navigate(`/results?searchTerm=${searchTerm}`);
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 p-8">
       <h1 className="text-3xl font-bold mb-6">Search</h1>
-      <input
-        type="text"
-        placeholder="Search for songs, artists, or playlists"
-        className="w-full rounded-md border border-gray-300 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-        value={searchTerm}
-      />
-      {/* <div className="mt-8">{searchTerm && <p>{searchTerm}</p>}</div> */}
+      <SearchBar searchTerm={searchTerm} onSearch={handleSearch} />
+      <div className="mt-8">{searchTerm && <p>Search Term: {searchTerm}</p>}</div>
     </div>
   );
 };
