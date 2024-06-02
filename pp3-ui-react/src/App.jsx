@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
-import Root from './views/Root';
-import Search from './views/Search';
+import React, { useEffect, useState } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Root from "./views/Root";
+import Search from "./views/Search";
 
 function App() {
-
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [token, setToken] = useState(null);
 
   return (
-    <div>
+    <div className="">
       <section>
         <Routes>
-          <Route path='/' element={<Root />} />
-          <Route path='/search' element={<Search />} />
+          <Route path="/" element={<Root />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </section>
-  </div>
+    </div>
   );
 }
 
