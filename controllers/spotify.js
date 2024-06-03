@@ -83,10 +83,10 @@ const jwt = async (req, res, next) => {
 
 const auth = async (req, res) => {
   if (req.token) {
-    res.token = req.token
-    res.redirect("http://localhost:3000/search");
+    const tokenValue = req.token.access_token
+    res.redirect(`http://localhost:3000/search?token=${tokenValue}`);
   } else {
-    res.redirect("http://localhost:3000/");
+    res.json({ error: "Token not found" });
   }
 };
 
