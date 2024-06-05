@@ -4,7 +4,6 @@ import Root from "./views/Root";
 import Search from "./views/Search";
 
 function App() {
-  const [accessToken, setToken] = useState();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -25,7 +24,7 @@ function App() {
       <section>
         <Routes>
           <Route path="/" element={<Root />} />
-          <Route path="/search" element={<Search token={accessToken} setToken={setToken} />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </section>
     </div>
