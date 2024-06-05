@@ -1,5 +1,5 @@
 const SearchBar = ({ searchTerm, onSearchChange, onSubmit }) => (
-  <div className="search-bar">
+  <div className="search-bar w-3/4">
     <form onSubmit={onSubmit}>
       <input
         type="text"
