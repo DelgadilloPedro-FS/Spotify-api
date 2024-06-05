@@ -12,10 +12,8 @@ function App() {
     console.log("Location search:", location.search);
     const params = new URLSearchParams(location.search);
     const token = params.get("token");
-    console.log("Token:", token);
     if (token) {
       // Token obtained, store it in state or localStorage
-      setToken(token);
       localStorage.setItem("token", token)
       // Optionally, navigate to another page
       navigate("/search");
@@ -27,7 +25,7 @@ function App() {
       <section>
         <Routes>
           <Route path="/" element={<Root />} />
-          <Route path="/search" element={<Search token={accessToken} />} />
+          <Route path="/search" element={<Search token={accessToken} setToken={setToken} />} />
         </Routes>
       </section>
     </div>
