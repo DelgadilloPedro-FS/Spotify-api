@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import Root from "./views/Root";
 import Search from "./views/Search";
+import User from "./views/User";
 
 function App() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Root />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/user" element={<User />} />
         </Routes>
       </section>
     </div>

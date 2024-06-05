@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SearchBar from "../components/SearchBar";
 import Results from "../components/Results";
+import NavBar from "../components/NavBar";
 import axios from "axios";
 
 const Search = () => {
@@ -64,6 +65,7 @@ const Search = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-800 to-gray-700 p-8 flex items-center flex-col w-full">
+      <NavBar />
       <h1 className="text-3xl font-bold text-white mb-6">Search</h1>
       <SearchBar
         onSearchChange={(value) => setSearchTerm(value)}
