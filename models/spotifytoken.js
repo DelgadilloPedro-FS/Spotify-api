@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class User extends Model {
+  class SpotifyToken extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,13 +13,14 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  User.init({
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    email: DataTypes.STRING
+  SpotifyToken.init({
+    access_token: DataTypes.STRING,
+    token_type: DataTypes.STRING,
+    expires_in: DataTypes.BIGINT,
+    refresh_token: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'User',
+    modelName: 'SpotifyToken',
   });
-  return User;
+  return SpotifyToken;
 };
