@@ -1,5 +1,3 @@
-import React from "react";
-
 const SearchBar = ({ searchTerm, onSearchChange, onSubmit }) => (
   <div className="search-bar">
     <form onSubmit={onSubmit}>
